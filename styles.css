@@ -140,3 +140,59 @@ th {
         font-size: 20px; /* Sesuaikan ukuran ikon pada perangkat kecil */
     }
 }
+/* Gaya Umum untuk Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+thead {
+    background-color: #f4f4f4;
+}
+
+/* Responsif untuk Tabel */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Memungkinkan scrolling halus pada perangkat iOS */
+    }
+    table {
+        width: 100%;
+        border: 0;
+    }
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+    }
+    thead {
+        display: none; /* Sembunyikan header tabel pada tampilan kecil */
+    }
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    td {
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        background: #f4f4f4;
+    }
+}
