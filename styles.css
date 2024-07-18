@@ -206,7 +206,7 @@ thead {
 @media (max-width: 768px) {
     .slideshow img {
         height: auto; /* Mengatur tinggi otomatis untuk gambar pada perangkat lebih kecil */
-        max-height: 300px; /* Sesuaikan tinggi maksimum sesuai kebutuhan */
+        max-height: 500px; /* Sesuaikan tinggi maksimum sesuai kebutuhan */
     }
 }
 
