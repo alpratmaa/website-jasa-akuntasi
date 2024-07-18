@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0044cc;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #003399;
+}
+header {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.slideshow img {
+    width: 100%;
+    display: none;
+}
+.slideshow img:first-child {
+    display: block;
+}
+.content {
+    padding: 20px;
+}
+.services, .about, .contact, .testimonials {
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #0044cc;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+footer .social-icon {
+    display: inline-block;
+    margin-top: 10px;
+}
+footer .social-icon i {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+footer .social-icon i:hover {
+    color: #9d40e4; /* Warna khas Instagram */
+}
+a {
+    color: #0044cc;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-top: 10px;
+}
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0044cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #003399;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #0044cc;
+    color: #fff;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .slideshow img {
+        height: 200px; /* Sesuaikan tinggi gambar pada perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .slideshow img {
+        height: 150px; /* Sesuaikan tinggi gambar pada perangkat yang lebih kecil */
+    }
+    footer .social-icon i {
+        font-size: 20px; /* Sesuaikan ukuran ikon pada perangkat kecil */
+    }
+}
