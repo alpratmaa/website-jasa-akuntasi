@@ -196,3 +196,22 @@ thead {
         background: #f4f4f4;
     }
 }
+/* Gaya Umum untuk Gambar */
+.slideshow img {
+    width: 100%;
+    height: auto; /* Pastikan tinggi disesuaikan otomatis untuk mempertahankan rasio aspek */
+}
+
+/* Responsif untuk Gambar di Perangkat Kecil */
+@media (max-width: 768px) {
+    .slideshow img {
+        height: auto; /* Mengatur tinggi otomatis untuk gambar pada perangkat lebih kecil */
+        max-height: 300px; /* Sesuaikan tinggi maksimum sesuai kebutuhan */
+    }
+}
+
+@media (max-width: 480px) {
+    .slideshow img {
+        max-height: 200px; /* Sesuaikan tinggi maksimum pada perangkat yang lebih kecil */
+    }
+}
